@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- style 지정 -->
+    <style>
+        .red {
+            color : red;
+        }
+        .blue {
+            color : blue;
+        }
+    </style>
+    <script>
+        var i = 20;
+
+        while (i >= 10) {
+            if (i % 2 == 0) {
+                document.write("<p class = 'blue'>" + i + "</p>");  // 짝수는 파란색
+            } else {
+                document.write("<p class = 'red'>" + i + "</p>");   // 홀수는 빨간색
+            }
+            i--;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var count = 0;
+
+        myFunc();   // 함수 hoisting : 함수 선언 전에 미리 함수 실행
+
+        // 일반 함수 정의 방식
+        function myFunc() {
+            count++;
+            document.write("hello" + count, "<br>");
+        }
+
+        myFunc();
+
+        // 익명 함수 정의 방식 -> hoisting 적용 불가능
+        var theFunc = function() {
+            count++;
+            document.write("bye" + count, "<br>");
+        }
+
+        theFunc();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

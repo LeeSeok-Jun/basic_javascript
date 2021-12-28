@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var greenArr = ["교대", "방배", "강남"];
+        var yellowArr = ["미금", "정자", "수서"];
+
+        greenArr.splice(2, 1, "서초", "역삼");   // 2번 인덱스(강남) 부터 하나 잘라내고 서초와 역삼을 삽입
+        console.log(greenArr);
+        
+        var data1 = yellowArr.pop();    // 마지막 인덱스의 데이터 추출(스택)
+        var data2 = yellowArr.shift();  // 가장 앞쪽의 데이터 추출(큐)
+
+        yellowArr.push(data2);  // 맨 뒤에 데이터 추가
+        console.log(yellowArr);
+
+        yellowArr.unshift(data1); // 맨 앞에 데이터 추가
+        console.log(yellowArr);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

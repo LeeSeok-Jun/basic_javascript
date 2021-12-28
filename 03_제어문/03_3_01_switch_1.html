@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var site = prompt("즐겨찾는 사이트는 ?", "");
+        var url
+
+        switch(site) {
+            case "google":
+                url = "www.google.com";
+                break;
+            case "daum":
+                url = "www.daum.net";
+                break;
+            case "naver":
+                url = "www.naver.com";
+                break;
+            case "nate":
+                url = "www.nate.com";
+                break;
+            default:
+                alert("No site");
+        }
+        // url 값이 존재하면
+        if (url) {
+            location.href = "https://" + url;   // 해당 사이트로 이동
+        } else {
+            location.reload();
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
